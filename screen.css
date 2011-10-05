@@ -274,7 +274,7 @@ pre {
 pre.ib {
   padding: 0;
 }
-mark {
+mark, span.mark {
   display: inline-block;
   background: #ff8;
   border: 1px dotted #888;
