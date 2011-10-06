@@ -2,7 +2,6 @@
 <meta charset=utf-8>
 <title>Semantics - Dive Into HTML5</title>
 <!--[if lt IE 9]><script src=j/html5.js></script><![endif]-->
-<link rel=icon href=favicon.ico>
 <link rel=stylesheet href=screen.css>
 <style>
 body{counter-reset:h1 3}
@@ -160,12 +159,12 @@ dl.col dt,dl.col dd{padding-bottom:1.75em}
 <div class=inner>
 <blockquote class=note>
 <p><span>&#x261E;</span>Q: I never use funny characters. Do I still need to declare my character encoding?<br>
-<p>A: Yes! You should <em>always</em> specify a character encoding on every <abbr>HTML</abbr> page you serve. Not specifying an encoding <a href="http://code.google.com/p/doctype/wiki/ArticleUtf7">can lead to security vulnerabilities</a>.
+<p>A: Yes! You should <em>always</em> specify a character encoding on every <abbr>HTML</abbr> page you serve. Not specifying an encoding <a href=http://openmya.hacker.jp/hasegawa/security/utf7cs.html>can lead to security vulnerabilities</a>.
 </blockquote>
 </div>
 </div>
 
-<p>To sum up: character encoding is complicated, and it has not been made any easier by decades of poorly written software used by copy-and-paste&ndash;educated authors. You should <strong>always</strong> specify a character encoding on <strong>every</strong> <abbr>HTML</abbr> document, or <a href="http://code.google.com/p/doctype/wiki/ArticleUtf7">bad things will happen</a>. You can do it with the HTTP <code>Content-Type</code> header, the <code>&lt;meta http-equiv></code> declaration, or the shorter <code>&lt;meta charset></code> declaration, but please do it. The web thanks you.
+<p>To sum up: character encoding is complicated, and it has not been made any easier by decades of poorly written software used by copy-and-paste&ndash;educated authors. You should <strong>always</strong> specify a character encoding on <strong>every</strong> <abbr>HTML</abbr> document, or <a href=http://openmya.hacker.jp/hasegawa/security/utf7cs.html>bad things will happen</a>. You can do it with the HTTP <code>Content-Type</code> header, the <code>&lt;meta http-equiv></code> declaration, or the shorter <code>&lt;meta charset></code> declaration, but please do it. The web thanks you.
 
 <p class=a>&#x2767;
 
@@ -228,8 +227,6 @@ dl.col dt,dl.col dd{padding-bottom:1.75em}
 <p>HTML5 also puts to rest a long-standing confusion about how to link to translations of documents. <abbr>HTML</abbr> 4 says to use the <code>lang</code> attribute in conjunction with <code>rel="alternate"</code> to specify the language of the linked document, but this is incorrect. The <a href=http://www.w3.org/MarkUp/html4-updates/errata>HTML 4 Errata</a> document lists four outright errors in the <abbr>HTML</abbr> 4 specification. One of these outright errors is how to specify the language of a document linked with <code>rel="alternate"</code> The correct way, described in the <abbr>HTML</abbr> 4 Errata and now in <abbr>HTML5</abbr>, is to use the <code>hreflang</code> attribute. Unfortunately, these errata were never re-integrated into the <abbr>HTML</abbr> 4 spec, because no one in the W3C <abbr>HTML</abbr> Working Group was working on <abbr>HTML</abbr> anymore.
 
 <h3 id=new-relations>Other Link Relations in HTML5</h3>
-
-<p><a href=http://www.whatwg.org/specs/web-apps/current-work/multipage/links.html#rel-archives>rel="archives"</a> &#8220;indicates that the referenced document describes a collection of records, documents, or other materials of historical interest. A blog&#8217;s index page could link to an index of the blog&#8217;s past posts with rel="archives".&#8221;
 
 <p><code>rel="author"</code> is used to link to information about the author of the page. This can be a <code>mailto:</code> address, though it doesn&#8217;t have to be. It could simply link to a contact form or &#8220;about the author&#8221; page.
 
