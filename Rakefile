@@ -220,3 +220,21 @@ end
 task :default => "build/Dive into HTML5.pdf" do |task|
   system 'open', task.prerequisites.first
 end
+
+task :s3_connect do
+  require 'aws/s3'
+  AWS::S3::Base.establish_connection! \
+    access_key_id: ENV['AMAZON_ACCESS_KEY_ID'],
+    secret_access_key: ENV['AMAZON_SECRET_ACCESS_KEY']
+end
+
+task :upload => ["build/Dive into HTML5.pdf", :s3_connect] do |task|
+  pdf_file = task.prerequisites.first
+  name = File.basename(pdf_file)
+  puts AWS::S3::S3Object.store(name, open(pdf_file), 'mislav', access: :public_read)
+  abort unless AWS::S3::Service.response.success?
+end
+
+task :s3_url => :s3_connect do
+  puts AWS::S3::S3Object.url_for("Dive into HTML5.pdf", 'mislav', authenticated: false).gsub('%20', '+')
+end
