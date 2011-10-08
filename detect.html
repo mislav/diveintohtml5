@@ -158,7 +158,7 @@ body{counter-reset:h1 2}
 
 <p class=ss style="width:224px"><img src=i/openclipart.org_johnny_automatic_at_the_theater.png alt="audience at the theater" width=224 height=334><br><span id=live-video></span>
 
-<p>The <code>&lt;video></code> element is designed to be usable without any detection scripts. You can specify multiple video files, and browsers that support <abbr>HTML5</abbr> video will choose one based on what video formats they support. (See &#8220;A gentle introduction to video encoding&#8221; <a href=http://diveintomark.org/archives/2008/12/18/give-part-1-container-formats>part 1: container formats</a> and <a href=http://diveintomark.org/archives/2008/12/19/give-part-2-lossy-video-codecs>part 2: lossy video codecs</a> to learn about different video formats.)
+<p>The <code>&lt;video></code> element is designed to be usable without any detection scripts. You can specify multiple video files, and browsers that support <abbr>HTML5</abbr> video will choose one based on what video formats they support.
 
 <p>Browsers that don&#8217;t support <abbr>HTML5</abbr> video will ignore the <code>&lt;video></code> element completely, but you can use this to your advantage and tell them to play video through a third-party plugin instead. Kroc Camen has designed a solution called <a href=http://camendesign.com/code/video_for_everybody>Video for Everybody!</a> that uses <abbr>HTML5</abbr> video where available, but falls back to QuickTime or Flash in older browsers. This solution uses no JavaScript whatsoever, and it works in virtually every browser, including mobile browsers.
 
@@ -210,7 +210,7 @@ body{counter-reset:h1 2}
 
 <pre><code>  var <mark>v</mark> = document.createElement("video");</code></pre>
 
-<p>A &#8220;video format&#8221; is really a combination of different things. In technical terms, you&#8217;re asking the browser whether it can play H.264 Baseline video and AAC LC audio in an MPEG-4 container. (I&#8217;ll explain what all that means in <a href=video.html>the Video chapter</a>. You might also be interested in reading <a href=http://diveintomark.org/tag/give>A gentle introduction to video encoding</a>.)
+<p>A &#8220;video format&#8221; is really a combination of different things. In technical terms, you&#8217;re asking the browser whether it can play H.264 Baseline video and AAC LC audio in an MPEG-4 container. (I&#8217;ll explain what all that means in <a href=video.html>the Video chapter</a>.)
 
 <pre><code>  return v.canPlayType('<mark>video/mp4; codecs="avc1.42E01E, mp4a.40.2"</mark>');</code></pre>
 
@@ -569,7 +569,6 @@ A: Geolocation support is being added to browsers right now, along with support 
 
 <ul>
 <li><a href=http://camendesign.com/code/video_for_everybody>Video for Everybody!</a>
-<li><a href=http://diveintomark.org/tag/give>A gentle introduction to video encoding</a>
 <li><a href=http://wiki.whatwg.org/wiki/Video_type_parameters>Video type parameters</a>
 <li><a href=everything.html>The All-In-One Almost-Alphabetical No-Bullshit Guide to Detecting Everything</a>
 <li><a href=http://msdn.microsoft.com/en-us/ie/ff468705.aspx>Internet Explorer 9 Guide for Developers</a>

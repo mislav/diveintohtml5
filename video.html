@@ -115,13 +115,13 @@ body{counter-reset:h1 5}
  
 <p>The MP3 standard doesn&#8217;t define exactly how to encode MP3s (although it does define exactly how to decode them); different encoders use different psychoacoustic models that produce wildly different results, but are all decodable by the same players. The open source <a href=http://lame.sourceforge.net/>LAME project</a> is the best free encoder, and arguably the best encoder period for all but the lowest bitrates. 
  
-<p>The MP3 format (standardized in 1991) <strong>is patent-encumbered</strong>, which explains why Linux can&#8217;t play MP3 files out of the box. Pretty much every portable music player supports standalone MP3 files, and MP3 audio streams can be embedded in any <a href=http://diveintomark.org/archives/2008/12/18/give-part-1-container-formats>video container</a>. Adobe Flash can play both standalone MP3 files and MP3 audio streams within an MP4 video container. 
+<p>The MP3 format (standardized in 1991) <strong>is patent-encumbered</strong>, which explains why Linux can&#8217;t play MP3 files out of the box. Pretty much every portable music player supports standalone MP3 files, and MP3 audio streams can be embedded in any video container. Adobe Flash can play both standalone MP3 files and MP3 audio streams within an MP4 video container. 
  
 <h3 id=aac>Advanced Audio Coding</h3>
  
 <p><a href=http://en.wikipedia.org/wiki/Advanced_Audio_Coding>Advanced Audio Coding</a> is affectionately known as &#8220;AAC.&#8221;  Standardized in 1997, it lurched into prominence when Apple chose it as their default format for the iTunes Store. Originally, all AAC files &#8220;bought&#8221; from the iTunes Store were encrypted with Apple&#8217;s proprietary DRM scheme, called <a href=http://en.wikipedia.org/wiki/FairPlay>FairPlay</a>. Selected songs in the iTunes Store are now available as unprotected AAC files, which Apple calls &#8220;iTunes Plus&#8221; because it sounds so much better than calling everything else &#8220;iTunes Minus.&#8221;  <strong>The AAC format is patent-encumbered</strong>; <a href=http://www.vialicensing.com/Licensing/AAC_fees.cfm>licensing rates are available online</a>. 
  
-<p>AAC was designed to provide better sound quality than MP3 at the same <i>bitrate</i>, and it can encode audio at any bitrate. (MP3 is limited to a fixed number of bitrates, with an upper bound of 320 kbps.)  AAC can encode <strong>up to 48 channels of sound</strong>, although in practice no one does that. The AAC format also differs from MP3 in defining multiple <i>profiles</i>, in much the same way as <a href=http://diveintomark.org/archives/2008/12/19/give-part-2-lossy-video-codecs#h264>H.264</a>, and for the same reasons. The &#8220;low-complexity&#8221; profile is designed to be playable in real-time on devices with limited CPU power, while higher profiles offer better sound quality at the same bitrate at the expense of slower encoding and decoding. 
+<p>AAC was designed to provide better sound quality than MP3 at the same <i>bitrate</i>, and it can encode audio at any bitrate. (MP3 is limited to a fixed number of bitrates, with an upper bound of 320 kbps.)  AAC can encode <strong>up to 48 channels of sound</strong>, although in practice no one does that. The AAC format also differs from MP3 in defining multiple <i>profiles</i>, in much the same way as H.264, and for the same reasons. The &#8220;low-complexity&#8221; profile is designed to be playable in real-time on devices with limited CPU power, while higher profiles offer better sound quality at the same bitrate at the expense of slower encoding and decoding. 
  
 <p>All current Apple products, including iPods, AppleTV, and QuickTime support certain profiles of AAC in standalone audio files and in audio streams in an MP4 video container. Adobe Flash supports all profiles of AAC in MP4, as do the open source MPlayer and VLC video players. For encoding, the FAAC library is the open source option; support for it is a compile-time option in mencoder and ffmpeg.
  
@@ -766,7 +766,6 @@ AddType video/webm .webm</code></pre>
 <ul>
 <li><a href=http://www.whatwg.org/specs/web-apps/current-work/multipage/video.html#video><abbr>HTML5</abbr>: The <code>&lt;video></code> element</a>
 <li><a href=http://camendesign.com/code/video_for_everybody>Video for Everybody</a>
-<li><a href=http://diveintomark.org/tag/give>A gentle introduction to video encoding</a>
 <li><a href=http://hacks.mozilla.org/2009/09/theora-1-1-released/>Theora 1.1 is released &mdash; what you need to know</a>
 <li><a href=https://developer.mozilla.org/en/Configuring_servers_for_Ogg_media>Configuring servers for Ogg media</a>
 <li><a href=http://www.mplayerhq.hu/DOCS/HTML/en/menc-feat-x264.html>Encoding with the <code>x264</code> codec</a>
