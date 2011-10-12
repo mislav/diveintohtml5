@@ -369,3 +369,113 @@ tfoot {
 .zebra {
   background: #eee;
 }
+
+@media only screen and (max-width: 480px) {
+  /* basics */
+
+  html {
+    color:#000;
+  }
+  body {
+    margin:4px 2px 0 2px;
+  }
+
+  /* typography */
+
+  body, .c, span, pre span, .c, .note, p, ul, ol {
+    font:normal 12px/18px sans-serif;
+  }
+  pre, kbd, samp, code, var {
+    font:normal 12px/18px monospace;
+  }
+  .baa {
+    font:normal 14px/18px serif;
+  }
+  .c, .note, p, ul, ol, h2, h3 {
+    margin:1.75em 0;
+  }
+
+  /* links */
+
+  a:link, a:visited {
+    text-decoration: underline;
+    border: 0;
+  }
+  a:link:hover, a:visited:hover {
+    border: 0;
+  }
+  pre a {
+    text-decoration:none;
+  }
+
+  /* headers and pullquotes */
+
+  h1, h2, h3, h4, pre, caption, .legend, thead th {
+    padding:0;
+    border:0;
+    letter-spacing:0;
+    text-shadow:0 0 0;
+  }
+  h1 {
+    margin:0;
+  }
+  h1, h1 code {
+    font:normal 18px/18px serif;
+  }
+  h2, h2 code {
+    font:normal 16px/18px serif;
+  }
+  h3, h3 code, .legend, caption, thead th {
+    font:normal 14px/18px serif;
+  }
+  h4, h4 code {
+    font:normal 12px/18px serif;
+  }
+  h1:before {
+    content:"";
+  }
+
+  /* overrides */
+
+  .nm, .w, aside, form, form+p, .note span, .q span, .a, .ss img, .arrow {
+    display:none;
+  }
+  dd {
+    margin:0 0 0 1.75em;
+  }
+  .f img {
+    width: 4em;
+    height: 4em;
+  }
+  .pf .inner {
+    background: white;
+    min-height: inherit;
+    margin: 0;
+    padding: .25em;
+  }
+  .pf .moneybags {
+    background: white;
+    min-height: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  pre {
+    white-space: pre-wrap;
+    float: none !important;
+  }
+  .legend {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    font-weight: bold;
+  }
+  strong, b, em, i {
+    text-transform: inherit;
+  }
+  strong, b {
+    font-weight: bold;
+  }
+  em, i {
+    font-style: oblique;
+  }
+}
