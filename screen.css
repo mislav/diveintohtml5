@@ -377,7 +377,7 @@ tfoot {
     color:#000;
   }
   body {
-    margin:4px 2px 0 2px;
+    margin:4px 7px .5em 7px;
   }
 
   /* typography */
@@ -392,7 +392,10 @@ tfoot {
     font:normal 14px/18px serif;
   }
   .c, .note, p, ul, ol, h2, h3 {
-    margin:1.75em 0;
+    margin:1em 0;
+  }
+  blockquote {
+    margin:1em 1em 0 1.5em;
   }
 
   /* links */
@@ -459,9 +462,13 @@ tfoot {
     margin: 0;
     padding: 0;
   }
+  .pf blockquote {
+    margin: 0 1em;
+  }
   pre {
     white-space: pre-wrap;
     float: none !important;
+    padding-left: 1em;
   }
   .legend {
     margin: 0 !important;
